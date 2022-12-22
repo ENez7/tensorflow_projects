@@ -1,5 +1,4 @@
-# OOP with Python
-- Python scripts based on [Platzi](https://platzi.com/c/enez/ "Platzi") [course](https://platzi.com/clases/poo-python/ "course") 💚
+# ML with Python 
 - Use Python 3
 - Working on this, not all scripts uploaded
 
@@ -16,7 +15,7 @@
 5. Add python path to environment variables
 
 > To run python scripts, open CMD, move onto your script's directory and enter: 
->  python scriptName.py  // VSCode recommended to avoid this step
+>  python scriptName.py
 
 ## Setting a virtual environment - Windows
     mkdir directoryName
