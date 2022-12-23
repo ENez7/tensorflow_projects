@@ -7,12 +7,6 @@ import numpy as np
 # Import dataset
 (x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
 
-print('Shapes')
-print(f'X Train: {x_train.shape[0]}')
-print(f'Y Train: {y_train.shape[0]}')
-print(f'X Test : {x_test.shape[0]}')
-print(f'Y Test : {y_test.shape[0]}')
-
 # UNCOMMENT THESE LINES TO PLOT RANDOM IMAGES FROM INPUT DATA
 
 # n_rand = 16
@@ -33,7 +27,7 @@ print(f'Y Test : {y_test.shape[0]}')
 # Images must be flattened to put them into neural network
 # This is done by taking a 2D-grid and transforming it into a 1D-vector
 # So x_train_flat -> [0, 1, 2, ..., 59999] 60.000 images
-# and x_train_flat[0] -> [0, 1, 2, ..., 783] 24x24 pixels for each image
+# and x_train_flat[0] -> [0, 1, 2, ..., 783] 28x28 pixels for each image
 # finally x_train_flat : [[0,...,783], ..., [0,...,783]]
 x_train_flat = np.reshape(x_train, (x_train.shape[0], x_train.shape[1] * x_train.shape[2]))
 x_test_flat = np.reshape(x_test, (x_test.shape[0], x_test.shape[1] * x_test.shape[2]))

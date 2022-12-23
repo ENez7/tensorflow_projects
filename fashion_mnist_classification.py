@@ -96,15 +96,10 @@ for i in range(len(images)):
     original_cat = np.argmax(y_test_norm[idx, :])
     predicted_cat = np.argmax(y_pred[idx])
 
-    print(original_cat)
-    print(type(original_cat))
-    print(predicted_cat)
-    print(type(predicted_cat))
-
     plt.subplot(4, 4, i+1)
     plt.imshow(img, cmap='gray')
     plt.axis('off')
-    plt.title(f'{original_cat} classified as: {predicted_cat}')
+    plt.title(f'{definitions[original_cat]} classified as: {definitions[predicted_cat]}')
 
 plt.suptitle('Classifications in test set')
 plt.show()
