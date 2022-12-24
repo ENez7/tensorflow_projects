@@ -9,7 +9,13 @@
 import tensorflow as tf
 from tensorflow import keras
 
-
+# Filter corrupted data
+import os
+num_skipped = 0
+for folder_name in ('Cat', 'Dog'):
+    folder_path = os.path.join('datasets/PetImages', folder_name)
+    for fname in os.listdir(folder_path):
+        fpath = os.path.join(folder_path, fname)
 
 
 
